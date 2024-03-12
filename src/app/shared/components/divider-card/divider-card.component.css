@@ -1,0 +1,24 @@
+
+.container-card{
+    @apply bg-yellow-400 w-72 h-28 flex flex-col justify-center gap-5 rounded-xl;
+}
+
+.title-card{
+    @apply font-extrabold text-3xl;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #504a4a;
+}
+
+.container-icon-card{
+    @apply flex justify-center;
+}
+
+.icon-card{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .2s;
+}
+
+.icon-card:hover{
+    transform: scale(1.3);
+}
