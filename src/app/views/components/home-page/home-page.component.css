@@ -1,0 +1,9 @@
+
+.home-page-container{
+    @apply h-screen text-center py-9;
+}
+
+.home-page-title{
+    @apply text-5xl font-bold text-red-600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
