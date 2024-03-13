@@ -3,11 +3,10 @@
     <h1 class="home-page-title">MARVEL</h1>
 
     <section class="home-page-elements">
-        <app-divider-card />
-        <app-divider-card />
-        <app-divider-card />
-        <app-divider-card />
-        <app-divider-card />
+        @for (element of listElements; track element.id) {
+            <app-divider-card [info]="element"/>
+        }
+        
     </section>
 
 </section>
