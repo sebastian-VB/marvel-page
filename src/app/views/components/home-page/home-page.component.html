@@ -4,7 +4,7 @@
 
     <section class="home-page-elements">
         @for (element of listElements; track element.id) {
-            <app-divider-card [info]="element"/>
+            <app-divider-card [info]="element" (valuePath)="pathForElement($event)"/>
         }
         
     </section>

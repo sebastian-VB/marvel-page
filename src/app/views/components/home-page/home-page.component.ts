@@ -39,4 +39,9 @@ export class HomePageComponent {
     }
   ]
 
+  //recibe la ruta y tiene que redirigir
+  pathForElement(path: string): void{
+    console.log(path);
+  }
+
 }
