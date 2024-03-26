@@ -10,3 +10,8 @@
     @apply text-3xl font-bold mb-14;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.character-content{
+    @apply mt-5 pt-10;
+}
+

@@ -1,0 +1,58 @@
+
+.content-info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #164679;
+    width: 380px;
+    padding: 10px
+}
+
+.content-image{
+    @apply w-28 h-28;
+}
+
+.content-text{
+    text-align: start;
+}
+
+.content-text p{
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    max-width: 180px;
+    @apply text-white;
+}
+
+.content-text .name{
+    @apply font-bold;
+}
+
+.content-button {
+    @apply ml-4;
+}
+
+.icon-card{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .2s;
+}
+
+.icon-card:hover{
+    transform: scale(1.3);
+}
+
+@media (min-width: 800px){
+
+    .content-info{
+        width: 700px;
+    }
+
+    .content-text p{
+        max-width: 450px;
+    }
+
+    .content-button {
+        @apply ml-10;
+    }
+}
