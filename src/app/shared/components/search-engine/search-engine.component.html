@@ -1,5 +1,5 @@
 
 <div class="character-search">
-    <input type="text" [placeholder]="placeholderAtri">
-    <button>Buscar</button>
+    <input type="text" [placeholder]="placeholderAtri" (keydown.enter)="getInfoInput()" [formControl]="infoInput">
+    <button (click)="getInfoInput()">Buscar</button>
 </div>

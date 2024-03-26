@@ -10,4 +10,10 @@ import { SearchEngineComponent } from '../../../shared/components/search-engine/
 })
 export class CharacterPageComponent {
 
+  constructor(){}
+
+  infoInputCharacter(value: string): void{
+    console.log(value);
+  }
+
 }
