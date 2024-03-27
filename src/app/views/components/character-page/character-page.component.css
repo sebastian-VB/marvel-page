@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative
 }
 
 .character-title{
@@ -12,6 +13,28 @@
 }
 
 .character-content{
-    @apply mt-5 pt-10;
+    @apply mt-5 pt-10 flex flex-col gap-5 pb-10;
 }
 
+.button-floating{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: #000;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-floating{
+    transform: scale(0.9);
+    transition: transform .1s;
+}
+
+.icon-floating:hover{
+    transform: scale(1);
+}
