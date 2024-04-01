@@ -6,23 +6,10 @@
     <app-search-engine placeholderAtri="Nombre de personajes" (valueInput)="infoInputCharacter($event)"/>
 
     <section class="character-content">
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
-        <app-card-element />
+        @for (character of listCharactersGrowing(); track character.id) {
+            <app-card-element identifier="character" [infoElement]="character"/>
+        }
+        
     </section>
 
     <app-floating-button (clickButton)="fillListCharacterForShow($event)" />

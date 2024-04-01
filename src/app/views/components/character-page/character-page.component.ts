@@ -37,7 +37,7 @@ export class CharacterPageComponent implements OnInit {
   //funcion para llenar un array con una cantidad de datos de otro array.
   //usando la funcion array.slice(indice inicio, indice final)
   fillListCharacterForShow(flag: boolean): void{
-    this.amountElements = this.amountElements+20;
+    this.amountElements = this.amountElements+ 20;
     if(flag && this.amountElements <= this.listCharacters.length){
       this.sizeList = this.listCharactersGrowing().length;
       this.listCharactersGrowing.update((characters: Character[]) => {
@@ -49,7 +49,8 @@ export class CharacterPageComponent implements OnInit {
       console.log(this.listCharactersGrowing());
     }
     else{
-      this.amountElements = 0;
+      alert("Ya no hay mas personajes");
+      this.amountElements = 101;
     }
   }
 
