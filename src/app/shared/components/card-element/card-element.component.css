@@ -91,6 +91,10 @@
         max-width: 450px;
     }
 
+    .content-text{
+        width: 450px;
+    }
+
     .content-button {
         @apply ml-10;
     }
