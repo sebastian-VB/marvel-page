@@ -1,9 +1,10 @@
 import { Component, HostListener, OnInit, signal } from '@angular/core';
 import { SearchEngineComponent } from '../../../shared/components/search-engine/search-engine.component';
 import { CardElementComponent } from '../../../shared/components/card-element/card-element.component';
-import { CharactersService } from '../../../core/services/characters.service';
-import { Character, ListCharacters } from '../../../shared/models/chracter.interface';
 import { FloatingButtonComponent } from '../../../shared/components/floating-button/floating-button.component';
+import { Character, ListCharacters } from '../../../shared/models/chracter.interface';
+import { CharactersService } from '../../../core/services/characters.service';
+
 
 @Component({
   selector: 'app-character-page',
