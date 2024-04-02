@@ -24,16 +24,6 @@ export class HomePageComponent {
       ruta: 'comics'
     },
     {
-      id: 3,
-      titulo: 'Creadores',
-      ruta: 'creators'
-    },
-    {
-      id: 4,
-      titulo: 'Eventos',
-      ruta: 'events'
-    },
-    {
       id: 5,
       titulo: 'Series',
       ruta: 'series'

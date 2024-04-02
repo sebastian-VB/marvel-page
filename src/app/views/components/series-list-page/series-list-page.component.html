@@ -1,0 +1,15 @@
+<section class="serie-page-container">
+
+    <h1 class="serie-title">Series de Marvel</h1>
+
+    <app-search-engine placeholderAtri="Nombre de serie" (valueInput)="infoInputSerie($event)"/>
+
+    <section class="serie-content">
+        @for (serie of listSeriesGrowing(); track serie.id) {
+            <app-card-element identifier="serie" [infoElement]="serie"/>
+        }
+    </section>
+
+    <app-floating-button (clickButton)="fillListSerieForShow($event)" />
+
+</section>
