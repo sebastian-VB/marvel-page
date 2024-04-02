@@ -1,0 +1,15 @@
+<section class="comic-page-container">
+
+    <h1 class="comic-title">Comics de Marvel</h1>
+
+    <app-search-engine placeholderAtri="Nombre de comic" (valueInput)="infoInputComic($event)"/>
+
+    <section class="comic-content">
+        @for (comic of listComicsGrowing(); track comic.id) {
+            <app-card-element identifier="comic" [infoElement]="comic"/>
+        }
+    </section>
+
+    <app-floating-button (clickButton)="fillListComicForShow($event)" />
+
+</section>

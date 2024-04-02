@@ -13,7 +13,7 @@ import { CharactersService } from '../../../core/services/characters.service';
   templateUrl: './character-page.component.html',
   styleUrl: './character-page.component.css'
 })
-export class CharacterPageComponent implements OnInit {
+export class CharacterListPageComponent implements OnInit {
 
   listCharacters: Character[] = [];
   listCharactersGrowing = signal<Character[]>([]);

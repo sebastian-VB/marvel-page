@@ -31,6 +31,10 @@ export class CardElementComponent implements OnInit{
         console.log(this.element);
         break;
       case "comic":
+        this.element.nameOrTitle = this.infoElement.title;
+        this.element.content = "No tine descripcion";
+        this.element.image = image;
+        console.log(this.element);
         break;
       case "creator":
         break;
