@@ -28,13 +28,13 @@ export class CardElementComponent implements OnInit{
                                 ?"No tine descripcion"
                                 : this.infoElement.description;
         this.element.image = image;
-        console.log(this.element);
+        //console.log(this.element);
         break;
       case "comic":
         this.element.nameOrTitle = this.infoElement.title;
         this.element.content = "No tine descripcion";
         this.element.image = image;
-        console.log(this.element);
+        //console.log(this.element);
         break;
       case "serie":
         this.element.nameOrTitle = this.infoElement.title;
@@ -42,7 +42,7 @@ export class CardElementComponent implements OnInit{
                                 ?"No tine descripcion"
                                 : this.infoElement.description;
         this.element.image = image;
-        console.log(this.element);
+        //console.log(this.element);
         break;
     }
   }

@@ -20,19 +20,29 @@ export class CharacterListPageComponent implements OnInit {
   amountElements: number = 20;
   sizeList: number = 0;
 
+  listElementSearch: Character[] = [];
+
   constructor(private charactersSvc: CharactersService){}
 
   ngOnInit(): void {
     this.charactersSvc.getListCharacter().subscribe((info: ListCharacters) => {
       this.listCharacters = info.data.results;
       this.listCharactersGrowing.set(this.listCharacters.slice(0, this.amountElements));
-      console.log(this.listCharactersGrowing());
+      //console.log(this.listCharactersGrowing());
     });
   }
 
 
   infoInputCharacter(value: string): void{
     console.log(value);
+    let sum = 0;
+    //realizar codigo de busqueda
+    this.listCharacters.forEach(item => {
+      if(item.name.toLowerCase().includes(value.toLowerCase())){
+        this.listElementSearch.push(item);
+      }
+    });
+    console.log(this.listElementSearch);
   }
 
   //funcion para llenar un array con una cantidad de datos de otro array.
