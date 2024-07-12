@@ -1,0 +1,18 @@
+
+.character-search input{
+    background-color: rgb(243, 243, 243);
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+    padding: 0 8px;
+    border-radius: 8px
+}
+
+.character-search button{
+    @apply bg-yellow-400 px-5 py-2 rounded font-semibold ml-3 mt-4;
+    transition: background-color .2s;
+}
+
+.character-search button:hover{
+    background-color: rgb(234, 179, 8);
+}

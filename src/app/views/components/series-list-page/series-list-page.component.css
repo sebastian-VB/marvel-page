@@ -1,0 +1,16 @@
+.serie-page-container{
+    @apply h-screen text-center py-9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative
+}
+
+.serie-title{
+    @apply text-3xl font-bold mb-14;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.serie-content{
+    @apply mt-5 pt-10 flex flex-col gap-5 pb-10;
+}

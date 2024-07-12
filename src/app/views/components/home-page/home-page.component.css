@@ -1,0 +1,36 @@
+
+.home-page-container{
+    @apply h-screen text-center py-9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page-title{
+    @apply text-5xl font-bold text-red-600 mb-14;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-page-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 800px){
+    .home-page-elements{
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-top: 30px;
+        padding: 50px 20px;
+    }
+
+    .home-page-title{
+        @apply text-6xl;
+    }
+}
